@@ -29,7 +29,7 @@
 <body>
 <main>
 <h1>Gulp It — Privacy Policy</h1>
-<p class="meta">Effective 26 August 2026 · Applies to the Android app <strong>Gulp It</strong> (package <code>com.codmmontage.gulpit</code>), developed and published by codmmontage (“we”, “us”).</p>
+<p class="meta">Effective 28 August 2026 · Applies to the Android app <strong>Gulp It</strong> (package <code>com.codmmontage.gulpit</code>), developed and published by codmmontage (“we”, “us”).</p>
 
 <div class="summary">
 <strong>The short version</strong>
@@ -41,13 +41,13 @@
 </div>
 
 <h2>1. Data stored on your device</h2>
-<p>Gulp It saves your game progress (your pond, animals, fireflies, hats and decorations) and your settings (sound, music, options) in the app’s private storage on your device. If you drop your own art into the game’s custom-art folder, it stays there too. None of this is sent to us. Uninstalling the app deletes it all.</p>
+<p>Gulp It saves your game progress (your pond, animals, fireflies, hats and decorations) and your settings (sound, music, options) in the app’s private storage on your device. If you drop your own art into the game’s custom-art folder, it stays there too. The game also keeps a small local record of milestones you have reached — that you hatched, molted, or finished the tutorial, and when — which helps us improve the game if you ever choose to send it to us with a bug report. It contains no identifiers of any kind and is <strong>never uploaded automatically</strong>. None of this is sent to us. Uninstalling the app deletes it all.</p>
 
 <h2>2. Data we do not collect</h2>
 <ul>
   <li>No registration, login, name, e-mail address, phone number or password with us.</li>
   <li>No location, contacts, camera, microphone, photos or files outside the app’s own folder.</li>
-  <li>No analytics, advertising or crash-reporting SDKs other than the Google services described below.</li>
+  <li>No analytics, advertising or crash-reporting SDKs other than the Google services described below. The milestone record in section 1 stays on your device and is never uploaded.</li>
   <li>We do not sell, rent or share personal data with anyone.</li>
 </ul>
 
@@ -70,10 +70,10 @@
   <td>To deliver and, if needed, restore your purchases. Purchase history is kept by Google under your Google account; you can review it at play.google.com.</td>
 </tr>
 <tr>
-  <td><strong>Google Play Games Services</strong> (leaderboards)</td>
+  <td><strong>Google Play Games Services</strong> (leaderboards and cloud backup)</td>
   <td>Only if you choose to sign in from the Rankings tab. Nothing happens if you skip it.</td>
-  <td>Your Play Games profile (gamer name, avatar, player ID) and the scores the game submits (your current totals for the leaderboards). Google shows these on the leaderboards according to your Play Games privacy settings.</td>
-  <td>To let you compare your pond with friends. You control what other players see, and can remove your Play Games data, from the Google Play Games app or your Google account settings.</td>
+  <td>Your Play Games profile (gamer name, avatar, player ID) and the scores the game submits (your current totals for the leaderboards). Google shows these on the leaderboards according to your Play Games privacy settings. If you are signed in, the game also stores <strong>a copy of your saved game</strong> in your own Google account using Play Games Saved Games, so you can recover your pond on a new device. That copy holds only game progress — the same data described in section 1 — and it goes to your Google account, never to us.</td>
+  <td>To let you compare your pond with friends, and to keep your progress if you change or reset your phone. Restoring a backup is always something you choose from Settings. You control what other players see, and can remove your Play Games data and saved games, from the Google Play Games app or your Google account settings.</td>
 </tr>
 <tr>
   <td><strong>Google Play</strong> (the store)</td>
@@ -85,7 +85,19 @@
 </div>
 
 <h2>4. Permissions</h2>
-<p>Gulp It requests <strong>Internet</strong> access, used solely for the three Google services above. It does not request location, contacts, camera, microphone, storage or any other sensitive permission.</p>
+<p>Gulp It itself requests these Android permissions:</p>
+<ul>
+  <li><strong>Internet</strong> and <strong>network state</strong> — used solely for the Google services above.</li>
+  <li><strong>Vibration</strong> — for the short buzz on in-game events. You can switch it off in Settings.</li>
+  <li><strong>Notifications</strong> — for optional reminders that something is ready at your pond. You are asked before any are sent, and you can decline or turn them off later.</li>
+</ul>
+<p>The Google advertising and billing libraries add further permissions of their own when the app is built. These are declared by Google’s code rather than written by us, and they are listed on the app’s Play Store page:</p>
+<ul>
+  <li>An <strong>advertising ID</strong> permission and Google’s <em>Ad Services</em> permissions, used by AdMob only when you choose to watch an ad.</li>
+  <li>A <strong>billing</strong> permission, used by Google Play Billing when you make a purchase.</li>
+  <li><strong>Basic phone state</strong>, <strong>wake lock</strong> and <strong>foreground service</strong> permissions, which the advertising library declares as part of its standard installation.</li>
+</ul>
+<p>Gulp It does <strong>not</strong> request location, contacts, camera, microphone, photos, or files outside its own folder.</p>
 
 <h2>5. Children</h2>
 <p>Gulp It is a general-audience game and is not directed at children under 13. We do not knowingly collect personal data from children. If you are a parent or guardian and believe a child has provided personal data through one of the Google services above, please contact us and we will help you get it removed, or use Google’s own tools for the relevant account.</p>
